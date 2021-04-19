@@ -22,5 +22,14 @@ The block headers are stored in a file called "blockchain\_headers". On Linux,
 this file can be located at ~/.electrum. For other systems, consult the
 [documentation](https://electrum.readthedocs.io/en/latest/faq.html#where-is-the-electrum-datadir-located)
 
+## Block Headers
+The block headers are stored sequentially as raw bytes. Each header is 80 bytes
+long and consists of the fields
+1. version number. 4 bytes
+2. previous block hash. 32 bytes.
+3. merkle root hash. 32 bytes
+4. block time. 4 bytes
+5. block difficulty. 4 bytes
+6. block nonce. 4 bytes
 
-
+For more information on each field, consult the [reference](https://developer.bitcoin.org/reference/block_chain.html)

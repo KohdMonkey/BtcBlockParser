@@ -23,7 +23,3 @@ with open(header_file, "rb") as f:
         print(block_num, ": ", block_time, " ", block_difficulty)
 
         block_num = block_num + 1
-
-        if block_num == 5:
-            break
-
